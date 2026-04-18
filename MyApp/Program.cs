@@ -44,19 +44,34 @@
 //     public const double PI = 3.14;
 //     public const double E = 2.71;
 
+ 
+//  public int Abs(int value)
+// {
+//     if (value < 0)
+//     return - value;
+//     return value;
+// }
 //      public int Max(int a, int b)
 //     {
-//         if (a > b)
-//             return a;
+//         if (a >= b)
+//          return a;
 //         return b;
 //     }
 //            public int Min(int a, int b)
 //     {
-//         if (a < b)
-//             return a;
+//         if (a <= b)
+//          return a;
 //         return b;
 //     }
-// }
+//      public double Sqrt(int a)
+//     {
+//         return System.Math.Sqrt(a);
+//     }
+//      public double Pow(double x, double y)
+//     {
+//         return System.Math.Pow(x, y);
+//     }
+//  }
 
 //  8
 // public class Post
