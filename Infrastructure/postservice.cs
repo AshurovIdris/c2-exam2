@@ -1,35 +1,18 @@
-﻿namespace Infrastructure;
+﻿using Domain.Models;
 
-public class Class1
+namespace Infrastructure.Services;
+
+public class PostService
 {
+    private List<Post> posts = new List<Post>();
 
-public class Post
-{
+    public void AddPost(Post post)
+    {
+        posts.Add(post);
+    }
 
-    public string Title { get; set; }
-    public string Description { get; set; }
-    public int LikeCount { get; set; }
-    public List<string> Comments { get; set; } 
-    public bool IsPublished { get; set; }
-
-    public Post(string title, string description)
+    public List<Post> GetPosts()
     {
-        Title = title;
-        Description = description;
+        return posts;
     }
-     public void Publish()
-    {
-        System.Console.WriteLine("The post is published.");
-        IsPublished = true;
-    }
-     public void Like()
-    {
-        LikeCount++;
-    }
-      public void Comment(string message)
-    {
-        Comments.Add(message);
-    }
-}
-
 }
